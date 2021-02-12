@@ -10,7 +10,7 @@
   become_user: postgres
   postgresql_user:
     db: decide
-    name: decide
-    password: decide
+    name: practica
+    password: practica
     priv: ALL
 
