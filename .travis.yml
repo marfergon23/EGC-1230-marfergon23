@@ -19,3 +19,9 @@ script:
   - coverage run --branch --source=. ./manage.py test census --keepdb --with-xunit
   - coverage xml
   - python-codacy-coverage -r coverage.xml
+notifications:
+  email:
+    recipients:
+      - marfergon23@alum.us.es
+    on_success: never 
+    on_failure: always
